@@ -1,3 +1,4 @@
 .env
 gorm.db
 tmp
+bin/*
