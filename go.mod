@@ -1,5 +1,6 @@
 module github.com/100lvlmaster/5-chan-go
 
+// +heroku goVersion go1.17
 go 1.17
 
 require (
@@ -11,7 +12,7 @@ require (
 	github.com/andybalholm/brotli v1.0.3 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.2 // indirect
-	github.com/klauspost/compress v1.13.4 // indirect
+	github.com/klauspost/compress v1.13.5 // indirect
 	github.com/matoous/go-nanoid/v2 v2.0.0
 	github.com/mattn/go-sqlite3 v1.14.8 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
@@ -23,7 +24,7 @@ require (
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/joho/godotenv v1.3.0 // indirect
+	github.com/joho/godotenv v1.3.0 // direct
 	github.com/stretchr/testify v1.7.0 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
