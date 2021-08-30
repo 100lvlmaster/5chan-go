@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"github.com/100lvlmaster/5-chan-go/database"
-	"github.com/100lvlmaster/5-chan-go/models"
+	"github.com/100lvlmaster/5chan-go/database"
+	"github.com/100lvlmaster/5chan-go/models"
 	"github.com/gofiber/fiber/v2"
 	gonanoid "github.com/matoous/go-nanoid/v2"
 )

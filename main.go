@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/100lvlmaster/5-chan-go/database"
-	"github.com/100lvlmaster/5-chan-go/middleware"
-	"github.com/100lvlmaster/5-chan-go/routes"
+	"github.com/100lvlmaster/5chan-go/database"
+	"github.com/100lvlmaster/5chan-go/middleware"
+	"github.com/100lvlmaster/5chan-go/routes"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/joho/godotenv"

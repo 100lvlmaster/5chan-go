@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/100lvlmaster/5-chan-go/controllers"
+	"github.com/100lvlmaster/5chan-go/controllers"
 	"github.com/gofiber/fiber/v2"
 )
 

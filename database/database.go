@@ -3,7 +3,7 @@ package database
 import (
 	"fmt"
 
-	"github.com/100lvlmaster/5-chan-go/models"
+	"github.com/100lvlmaster/5chan-go/models"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )

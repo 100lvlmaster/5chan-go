@@ -1,1 +1,1 @@
-web: bin/Intersect_api
+web: bin/5chan-go

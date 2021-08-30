@@ -1,4 +1,4 @@
-module github.com/100lvlmaster/5-chan-go
+module github.com/100lvlmaster/5chan-go
 
 // +heroku goVersion go1.17
 go 1.17
