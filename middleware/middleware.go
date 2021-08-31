@@ -10,7 +10,7 @@ import (
 func CustomeMiddleware() func(*fiber.Ctx) error {
 
 	return func(c *fiber.Ctx) error {
-		if c.Method() == "POST" {
+		if c.Method() == "POST" || c.Method() == "DELETE" {
 			apiKey, envExists := os.LookupEnv("API_KEY")
 			if !envExists {
 				return c.Status(500).SendString("Could not fetch env vars, call 100lvlmaster")

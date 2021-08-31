@@ -8,5 +8,5 @@ type Post struct {
 	Title  string  `json:"title"`
 	Author string  `json:"author"`
 	Body   string  `json:"body"`
-	Reply  []Reply `json:"replies"`
+	Reply  []Reply `json:"replies" gorm:"constraint:OnUpdate:CASCADE,OnDelete:SET NULL;"`
 }

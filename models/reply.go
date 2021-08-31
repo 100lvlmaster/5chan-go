@@ -9,5 +9,5 @@ type Reply struct {
 	Author string `json:"author"`
 	Body   string `json:"body"`
 	PostID string `json:"postId"`
-	Post   Post   `json:"post"`
+	Post   Post   `json:"post" gorm:"constraint:OnUpdate:CASCADE,OnDelete:SET NULL;"`
 }
