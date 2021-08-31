@@ -16,7 +16,7 @@ func GetPosts(c *fiber.Ctx) error {
 func GetPostById(c *fiber.Ctx) error {
 	id := c.Params("id")
 	var post models.Post
-	database.DBConn.First(&post, id)
+	database.DBConn.Preload("Reply").First(&post, id)
 	return c.JSON(post)
 }
 
@@ -29,4 +29,11 @@ func CreatePost(c *fiber.Ctx) error {
 	post.ID = id
 	database.DBConn.Create(&post)
 	return c.Status(201).JSON(post)
+}
+
+func DeletePost(c *fiber.Ctx) error {
+	id := c.Params("id")
+	var post models.Post
+	database.DBConn.Delete(&post, id)
+	return c.Status(200).SendString("Post deleted successfully")
 }
