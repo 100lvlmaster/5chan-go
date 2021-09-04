@@ -2,9 +2,10 @@ package database
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/100lvlmaster/5chan-go/models"
-	"gorm.io/driver/sqlite"
+	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
 
@@ -14,8 +15,11 @@ var (
 )
 
 func InitDb() *gorm.DB {
-
-	db, err := gorm.Open(sqlite.Open("gorm.db"), &gorm.Config{})
+	dsn, envExists := os.LookupEnv("DB_DSN")
+	if !envExists {
+		panic("Could not connect to the database")
+	}
+	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic("Could not initialize database")
 	}
