@@ -22,7 +22,10 @@ Build:
 
 > go build
 
-> fetching data
+Copy the env.example and rename it as .env
+and set the env vars as required.
+
+## Fetching data:
 
 Posts:
 
